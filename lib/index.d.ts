@@ -29,13 +29,6 @@
  * http://www.musicxml.org/dtds/license.html
  * This file contains multiple DTDs.
  */
-/**
- * Converts a MusicXML document into a MusicXML parttime-inspired JSON object.
- * See ScoreTimewise for full return type specification.
- *
- * This function will accept timepart MusicXML files, but will still return a
- * structure similar to parttime.
- */
 export declare function parseScore(score: string): ScoreTimewise;
 /**
  * Reads a document, and returns header information.
@@ -43,7 +36,7 @@ export declare function parseScore(score: string): ScoreTimewise;
  * ScoreHeader is a subset of ScoreTimewise, so you can always just call MusicXML.parse.score.
  * This function is a bit faster though, if you only care about metadata.
  */
-export declare function paseScoreHeader(score: string): ScoreHeader;
+export declare function parseScoreHeader(score: string): ScoreHeader;
 /**
  * Converts a MusicXML <measure /> from a **parttime** document into JSON.
  */
