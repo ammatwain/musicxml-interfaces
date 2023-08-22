@@ -41,7 +41,7 @@
  * This function will accept timepart MusicXML files, but will still return a
  * structure similar to parttime.
  */
-import  { DOMParser } from "@xmldom/xmldom";
+import  { DOMParser } from "xmldom";
 
 export function parseScore(score: string): ScoreTimewise {
   let dom: Document = xmlToParttimeDoc(score);
